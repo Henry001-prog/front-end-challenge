@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 export const MobileContainer = styled.div`
     flex: 1;
-    height: 66vh;
+    height: 62vh;
     width: 100vw;
     max-width: 550px;
     justify-content: center;
@@ -29,7 +29,7 @@ export const MobileContainer = styled.div`
     flex-wrap: wrap;
     align-self: center;
     background-color: lightblue;
-    padding: 51% 0px 3px 0px;
+    padding: 51% 0px 0px 0px;
     text-align: center;
     @media(min-width: 768px) and (max-width: 1024px) {
         max-width: 769px;
@@ -43,5 +43,8 @@ export const MobileContainer = styled.div`
     @media(min-width: 800px) and (max-width: 1280px) {
         padding: 16% 17% 3px 3%;
         max-width: 1024px;
+    }
+    @media(min-width: 280px) and (max-width: 653px) {
+        height: 100vh;
     }
 `;
