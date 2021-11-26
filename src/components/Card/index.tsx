@@ -22,14 +22,14 @@ export default function Card(props: ITemperature): JSX.Element {
             <BrowserView>
                 <Container>
                     <Content>
-                        <Text className='margin-bottom'>temperatureA: {props.temperatureA}</Text>
-                        <Text className='margin-bottom'>temperatureB: {props.temperatureB}</Text>
-                        <Text className='margin-bottom'>statusA: {props.statusA}</Text>
-                        <Text className='margin-bottom'>statusB: {props.statusB}</Text>
-                        <Text className='margin-bottom'>statusC: {props.statusC}</Text>
-                        <Text className='margin-bottom'>statusD: {props.statusD}</Text>
-                        <Text className='margin-bottom'>statusE: {props.statusE}</Text>
-                        <Text className='margin-bottom'>statusF: {props.statusF}</Text>
+                        <Text className='margin-bottom'>TemperatureA: {props.temperatureA}</Text>
+                        <Text className='margin-bottom'>TemperatureB: {props.temperatureB}</Text>
+                        <Text className='margin-bottom'>StatusA: {props.statusA}</Text>
+                        <Text className='margin-bottom'>StatusB: {props.statusB}</Text>
+                        <Text className='margin-bottom'>StatusC: {props.statusC}</Text>
+                        <Text className='margin-bottom'>StatusD: {props.statusD}</Text>
+                        <Text className='margin-bottom'>StatusE: {props.statusE}</Text>
+                        <Text className='margin-bottom'>StatusF: {props.statusF}</Text>
                     </Content>
                 </Container>
             </BrowserView>
@@ -37,14 +37,14 @@ export default function Card(props: ITemperature): JSX.Element {
             <MobileView>
                 <Container>
                     <MobileContent>
-                        <Text className='margin-bottom'>temperatureA: {props.temperatureA}</Text>
-                        <Text className='margin-bottom'>temperatureB: {props.temperatureB}</Text>
-                        <Text className='margin-bottom'>statusA: {props.statusA}</Text>
-                        <Text className='margin-bottom'>statusB: {props.statusB}</Text>
-                        <Text className='margin-bottom'>statusC: {props.statusC}</Text>
-                        <Text className='margin-bottom'>statusD: {props.statusD}</Text>
-                        <Text className='margin-bottom'>statusE: {props.statusE}</Text>
-                        <Text className='margin-bottom'>statusF: {props.statusF}</Text>
+                        <Text className='margin-bottom'>TemperatureA: {props.temperatureA}</Text>
+                        <Text className='margin-bottom'>TemperatureB: {props.temperatureB}</Text>
+                        <Text className='margin-bottom'>StatusA: {props.statusA}</Text>
+                        <Text className='margin-bottom'>StatusB: {props.statusB}</Text>
+                        <Text className='margin-bottom'>StatusC: {props.statusC}</Text>
+                        <Text className='margin-bottom'>StatusD: {props.statusD}</Text>
+                        <Text className='margin-bottom'>StatusE: {props.statusE}</Text>
+                        <Text className='margin-bottom'>StatusF: {props.statusF}</Text>
                     </MobileContent>
                 </Container>
             </MobileView>
