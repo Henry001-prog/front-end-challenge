@@ -10,6 +10,12 @@
 
 <br>
 
+<h2>Projeto funcionando:<h2>
+
+<h3>
+    <img src="./photos/front.gif" height="480" width="100%">
+</h3>
+
 ## :rocket: Tecnologias
 
 Neste projeto foi usado o `ReactJS` para montar todo um front-end responsivo junto com o `TypeScript` consumindo dados de uma API Rest.
@@ -20,9 +26,3 @@ Neste projeto foi usado o `ReactJS` para montar todo um front-end responsivo jun
 2. Entre no diretório do projeto: `cd front-end-challenge`
 3. Instale todas as dependências rodando no terminal: `yarn`
 6. Rode `yarn start` em outro terminal ou no próprio terminal do editor de código que você utiliza para rodar o projeto
-
-<h2>Projeto funcionando:<h2>
-
-<h3>
-    <img src="./photos/front.gif" height="480" width="100%">
-</h3>
