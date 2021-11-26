@@ -5,5 +5,5 @@
 <br>
 
 <h3>
-    <img src="./photos/front.gif" height="480" width="95%">
+    <img src="./photos/front.gif" height="480" width="100%">
 </h3>
