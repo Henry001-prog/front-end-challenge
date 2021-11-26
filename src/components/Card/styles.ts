@@ -15,6 +15,10 @@ export const Content = styled.div`
     :hover {
         border: 1px solid #d0d0d0;
     }
+
+    .margin-bottom{
+        margin-bottom: 5%;
+    }
 `;
 
 export const MobileContent = styled.div`
@@ -32,6 +36,11 @@ export const MobileContent = styled.div`
     :hover {
         border: 1px solid #d0d0d0;
     }
+
+    .margin-bottom{
+        margin-bottom: 5%;
+    }
+    
     @media(min-width: 280px) and (max-width: 653px) {
         max-width: 200px;
     }
@@ -39,5 +48,4 @@ export const MobileContent = styled.div`
 
 export const Text = styled.div`
     font-size: 1em;
-    margin-bottom: 5%;
 `;
