@@ -12,9 +12,9 @@
 
 <h2>Projeto funcionando:<h2>
 
-<h3>
+<p align="center">
     <img src="./photos/front.gif" height="480" width="100%">
-</h3>
+</p>
 
 ## :rocket: Tecnologias
 
