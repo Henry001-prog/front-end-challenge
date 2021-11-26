@@ -23,8 +23,6 @@ Neste projeto foi usado o `ReactJS` para montar todo um front-end responsivo jun
 
 <h2>Projeto funcionando:<h2>
 
-<br>
-
 <h3>
     <img src="./photos/front.gif" height="480" width="100%">
 </h3>
