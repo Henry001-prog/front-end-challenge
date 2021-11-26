@@ -6,9 +6,8 @@ export const Container = styled.div`
     width: 100vw;
     background-color: #DCDCDC;
     padding-top: 17%;
+    padding-bottom: 3px;
     text-align: center;
     font-size: 1.5em;
-    @media(min-width: 1200px) {
-        
-    }
+    background-color: lightblue;
 `;

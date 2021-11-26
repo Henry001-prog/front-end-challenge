@@ -14,10 +14,6 @@ export interface ITemperature {
     statusF: number;
 }
 
-export interface IProps {
-    item: ITemperature;
-}
-
 export default function Card(props: ITemperature): JSX.Element {
   //const temperatureA  = props.temperatureA;
   console.log('temperatura:', props)

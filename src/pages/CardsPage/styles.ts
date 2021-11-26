@@ -23,21 +23,3 @@ export const Container = styled.div`
         height: 100%;
     }
 `;
-
-export const MobileContainer = styled.div`
-    flex: 1;
-    height: 89vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    background-color: #DCDCDC;
-    padding: 0px 0px 0px 0px;
-    text-align: center;
-    @media(min-width: 1200px) {
-        
-    }
-`;

@@ -14,7 +14,7 @@ export default function Menu(): JSX.Element {
                 </Li>
 
                 <Li>
-                    <LinkPage to='/chartpage' style={{}}>Desafio 2</LinkPage>
+                    <LinkPage to='/chartpage'>Desafio 2</LinkPage>
                 </Li>
             </Div>
         </Nav>

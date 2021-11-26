@@ -11,15 +11,24 @@ import {
     Legend,
     ResponsiveContainer
 } from "recharts";
+
 import {BrowserView, MobileView} from 'react-device-detect';
+
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import { Container, MobileContainer } from "./styles";
 
+export interface IChart {
+    date: string;
+    generation: number;
+    temperature: number;
+    consume: number;
+}
 
-const CardScreen: React.FC = () => {
+const ChartPage: React.FC = () => {
 
-    const[temperatures, setTemperatures] = useState([]);
-    //console.log('dados2:', temperatures);
+    const[temperatures, setTemperatures] = useState<IChart[]>([]);
     
     useEffect(() => {
         loadData();
@@ -27,12 +36,11 @@ const CardScreen: React.FC = () => {
 
     async function loadData(): Promise<void> {
         try {
-            const response = await api.get(`/desafio_02`);
+            const response = await api.get('/desafio_02');
             const datas = response.data.data;
-            console.log('items:', datas);
             setTemperatures(datas);
         } catch(error) {
-            alert("Não foi possível carregar os dados!");
+            toast.error('Erro: não foi possível carregar os dados! Tente novamente mais tarde!');
             return;
         }
     }
@@ -41,6 +49,7 @@ const CardScreen: React.FC = () => {
         <>
             <BrowserView>
                 <Container>
+                    <ToastContainer autoClose={10000} />
                     <ResponsiveContainer width="99%" aspect={3}>
                         <LineChart
                             width={800}
@@ -74,6 +83,7 @@ const CardScreen: React.FC = () => {
 
             <MobileView>
                 <MobileContainer>
+                    <ToastContainer autoClose={10000} />
                     <ResponsiveContainer width="99%" aspect={3}>
                         <LineChart
                             width={800}
@@ -102,7 +112,6 @@ const CardScreen: React.FC = () => {
                             <Line type="monotone" dataKey="consume" stroke="#FFA500" />
                         </LineChart>
                     </ResponsiveContainer>
-            
                 </MobileContainer>
             </MobileView>
         </>
@@ -110,4 +119,4 @@ const CardScreen: React.FC = () => {
     );
 }
 
-export default CardScreen;
+export default ChartPage;

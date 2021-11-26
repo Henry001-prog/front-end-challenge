@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 import Menu from '../src/components/Menu';
 
@@ -11,8 +10,7 @@ import NotFound from './pages/NotFound';
 import history from './History';
 import { Router, Switch, Route } from 'react-router-dom';
 
-function App() {
-
+function App(): JSX.Element {
   return (
       <Router history={history}>
         <>
@@ -22,11 +20,11 @@ function App() {
               <Home />
             </Route>
 
-            <Route path="/cardspage">
+            <Route exact path="/cardspage">
               <CardsPage />
             </Route>
             
-            <Route path="/chartpage">
+            <Route exact path="/chartpage">
               <ChartPage />
             </Route>
 
